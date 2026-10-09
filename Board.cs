@@ -11,6 +11,14 @@ class Board
 
     private char _currentMarker = 'X';
 
+    public char CurrentMarker{
+        get{ return _currentMarker; }
+    }
+    public char[][] Matrix
+    {
+        get{ return _board; }
+    }
+
     public void Render()
     {
         Console.WriteLine("-------------");
